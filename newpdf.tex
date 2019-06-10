@@ -1,0 +1,231 @@
+\documentclass[openany]{book}
+\usepackage{lipsum}
+\usepackage[colorlinks]{hyperref}
+\renewcommand{\contentsname}{\centerline{mulu}}
+\usepackage{pdfpages}
+\usepackage[UTF8]{ctex}
+\usepackage[center]{titlesec}
+%\titleformat{\chapter}{\centering\Huge\bfseries}{第\,\thechapter\,章}{1em}{}
+\titleformat{\chapter}[display]{\Huge\bfseries}{第\,\thechapter\,章}{1em}{}
+\renewcommand\chaptername{\textbf{章节}} 
+\pagestyle{empty}
+\usepackage{fontspec}
+\setmainfont{Calibri}
+\usepackage{tikz,xcolor,mwe}
+\definecolor{cvgreen}{HTML}{92D14F}
+\definecolor{cvgray}{HTML}{D8E4BE}
+\definecolor{cvtext}{HTML}{92909B}
+%\setCJKsansfont{SimHei}
+\usetikzlibrary{shadows}
+\begin{document}
+\begin{tikzpicture}[remember picture,overlay]
+    % green bar
+    \fill[cvgreen] (current page.north west) rectangle ([xshift=5cm]current page.south west);
+    % gray bar
+    \fill[cvgray] ([yshift=-5cm]current page.north west) rectangle ([yshift=-10cm]current page.north east);
+    % title and date
+    \node[cvtext,right] at ([yshift=-7cm]current page.north west) {\addfontfeature{Scale = 5}\Huge 科技创新和成果转化管理文件汇编};
+    \node[cvtext,above left] at ([xshift=-1cm,yshift=-9.5cm]current page.north east) {\huge\bfseries \today};
+    % cover photo
+    \node[inner sep=0pt,below right] (image) at ([xshift=5cm,yshift=-10cm]current page.north west) {\includegraphics[width=9cm,height=9cm]{logo.eps}};
+    % name and address
+    \node[fill=white,drop shadow,align=center,text width=6.4cm,inner sep=0.3cm,below] (name) at (image.south) {\LARGE 温州市人民医院科教科};
+    \node[text width=15cm,inner sep=0.3cm,below right] at (name.south west) {\Large\obeylines%
+        Address: 浙江省温州市瓯海区古岸路299号
+        Tel.: 0577-88053656
+        E-Mail: yakeworld@126.com
+        URL: http://www.wzsrmyy.com
+    };
+    % attachments
+    \node[white,text width=5cm,inner sep=0.3cm,above right] at ([yshift=1cm]current page.south west) {\large\obeylines%
+        \textbf{介绍:}
+        内部资料
+            };
+\end{tikzpicture}
+
+
+
+
+
+\tableofcontents
+\newpage
+
+
+
+
+
+\chapter{国家政策法规}
+
+\section{中华人民共和国科学技术进步法（2007年修订）中华人民共和国主席令　第八十二号}
+\includepdf[pages={-}]{2.pdf}
+
+
+\section{国务院办公厅印发《国务院关于新形势下加快知识产权强国建设的若干意见》重点任务分工方案的通知 国办函〔2016〕66号}
+\includepdf[pages={-}]{16.pdf}
+
+\section{中华人民共和国促进科技成果转化法（2015年修订）}
+\includepdf[pages={-}]{1.pdf}
+
+\section{国务院关于印发实施《中华人民共和国促进科技成果转化法》若干规定的通知 国发〔2016〕16号}
+\includepdf[pages={-}]{4.pdf}
+
+\section{促进科技成果转移转化行动方案 国办发〔2016〕28号}
+\includepdf[pages={-}]{17.pdf}
+
+\section{中国科学院、科学技术部关于印发《中国科学院关于新时期加快促进科技成果转移转化指导意见》的通知 科发促字〔2016〕97号}
+\includepdf[pages={-}]{19.pdf}
+
+\section{关于修改〈国家科学技术奖励条例实施细则〉的决定 中华人民共和国科学技术部令第13号}
+\includepdf[pages={-}]{7.pdf}
+
+\section{科技部 财政部 税务总局关于科技人员取得职务科技成果转化现金奖励信息公示办法的通知 国科发政〔2018〕103号}
+\includepdf[pages={-}]{8.pdf}
+
+\section{关于科技人员取得职务科技成果转化现金奖励有关个人所得税政策的通知 财税〔2018〕58号}
+\includepdf[pages={-}]{9.pdf}
+
+\section{科技部关于建设浙江省国家科技成果转移转化示范区的函 国科函创〔2016〕281号}
+\includepdf[pages={-}]{12.pdf}
+
+\section{国务院关于优化科研管理提升科研绩效若干措施的通知 国发〔2018〕25号}
+\includepdf[pages={-}]{13.pdf}
+
+\section{中共中央办公厅 国务院办公厅印发《关于进一步加强科研诚信建设的若干意见》}
+\includepdf[pages={-}]{14.pdf}
+
+\section{国务院办公厅关于加快众创空间发展服务实体经济转型升级的指导意见	国办发〔2016〕7号}
+\includepdf[pages={-}]{18.pdf}
+
+\section{中华人民共和国专利法	中华人民共和国主席令第 八 号}
+\includepdf[pages={-}]{21.pdf}
+
+\section{中华人民共和国专利法实施细则}
+\includepdf[pages={-}]{20.pdf}
+
+\section{人力资源社会保障部关于支持和鼓励事业单位专业技术人员创新创业的指导意见 人社部规〔2017〕4号}
+\includepdf[pages={-}]{41.pdf}
+
+
+\chapter{浙江省市政策法规}
+
+
+\section{浙江省科学技术进步条例	浙江省人民代表大会常务委员会公告第65号}
+\includepdf[pages={-}]{26.pdf}
+
+\section{ 浙江省促进科技成果转化条例 浙科发政〔2017〕77号}
+\includepdf[pages={-}]{3.pdf}
+
+\section{浙江省科学技术厅关于印发2018年全省科技成果转化工作指标的通知 浙科发成〔2018〕86号}
+\includepdf[pages={-}]{5.pdf}
+
+\section{ 浙江省省级科技成果转化引导基金管理办法 浙财教〔2017〕2号}
+\includepdf[pages={-}]{6.pdf}
+
+\section{浙江省人民政府关于全面加快科技创新推动高质量发展的若干意见}
+\includepdf[pages={-}]{22.pdf}
+
+
+
+\section{浙江省人民政府办公厅关于加快发展众创空间促进创业创新的实施意见		浙政办发〔2015〕79号}
+\includepdf[pages={-}]{24.pdf}
+
+\section{浙江省科学技术厅关于印发《浙江省科技成果登记实施细则（修订）》的通知		浙科发成〔2012〕44号}
+\includepdf[pages={-}]{25.pdf}
+
+\section{浙江省科学技术奖励办法}
+\includepdf[pages={-}]{15.pdf}
+
+
+\section{加快卫生健康科技创新推动成果转化平台国家改革试点实施方案 浙卫发[2019]13号}
+\includepdf[pages={-}]{40.pdf}
+
+
+\section{关于印发《浙江省临床医学研究中心建设与管理试行办法》的通知	 浙科发社〔2016〕146号}
+\includepdf[pages={-}]{27.pdf}
+
+\section{浙江省科学技术厅关于印发《浙江省可持续发展创新示范区建设与管理办法》的通知	 浙科发社〔2016〕141号}
+\includepdf[pages={-}]{28.pdf}
+
+\section{浙江省科学技术厅关于印发《浙江省科技型中小企业认定管理办法》的通知	 浙科发高〔2016〕88号}
+\includepdf[pages={-}]{29.pdf}	
+
+\section{浙江省专利条例		 2015年 9月 25日}
+\includepdf[pages={-}]{30.pdf}	
+
+\section{浙江省鼓励支持事业单位科研人员离岗创业创新实施办法(试行)  浙人社发〔2016〕134号}
+\includepdf[pages={-}]{42.pdf}	
+
+\section{浙江省卫生健康委加快科技创新推进成果转化平台国家改革试点实施方案 浙卫发〔2019〕13号}
+\includepdf[pages={-}]{43.pdf}	
+
+
+\section{关于印发《温州市加快实施专利战略推进创新驱动发展二十四条政策》的通知	 温市科知发〔2015〕5号}
+\includepdf[pages={-}]{31.pdf}	
+
+
+\section{温州市人民政府办公室关于印发温州市产业创新服务综合体建设实施方案的通知	 温政办〔2018〕52 号}
+\includepdf[pages={-}]{32.pdf}	
+
+
+\section{关于印发温州市科技企业新“双倍增”三年行动计划（2018-2020年）的通知 温政办〔2018〕82 号}
+\includepdf[pages={-}]{33.pdf}	
+
+\section{中共温州市委  温州市人民政府印发《关于高水平建设人才生态最优市的40条意见》的通知 温委发〔2018〕28号}
+\includepdf[pages={-}]{34.pdf}	
+
+\section{中共温州市委 温州市人民政府关于印发《培育引进新兴产业 改造提升传统产业 加快壮大温州发展新动能的实施意见（试行）》的通知 温委发〔2018〕5号}
+\includepdf[pages={-}]{35.pdf}	
+
+
+\section{关于加快推进科技创新的“新十条”政策（试行）温委办发〔2017〕11 号}
+\includepdf[pages={-}]{36.pdf}	
+
+
+\section{关于印发《温州市发明专利产业化项目实施方案（修订）》的通知 2018-06-22}
+\includepdf[pages={-}]{38.pdf}	
+
+
+%\chapter{院校政策法规}
+
+%\section{关于调整华中科技大学科技成果转化工作领导小组成员的通知 华中科技大学校发〔2018〕17 号}
+%\includepdf[pages={-}]{10.pdf}
+
+%\section{关于印发《华中科技大学科技人员取得职务科技成果转化现金奖励信息公示办法》的通知 华中科技大学校科技〔2018〕4号}
+%\includepdf[pages={-}]{11.pdf}
+
+
+
+
+%\chapter{国外和港台相关法规}
+
+%\section{国外和港台相关法规}
+%\includepdf[pages={467-471,475-549}]{P020150413385483222977.pdf}
+
+
+%\chapter{政策解读}
+
+%\section{温州市科技创新优惠政策精编}
+%\includepdf[pages={-}]{37.pdf}
+
+%\includepdf[pages={-}]{8dde69f9eca74f9fbd61c1e5aacf6620.pdf}
+
+
+
+\chapter{温州市人民医院科管理文件}
+
+
+\section{温州市人民医院科技成果转化管理办法}
+\includepdf[pages={-}]{51.pdf}
+
+\section{温州市人民医院科技成果转化工作领导小组}
+\includepdf[pages={-}]{52.pdf}
+
+ 
+
+
+
+
+
+
+
+\end{document}
